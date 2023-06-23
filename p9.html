@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>MARQUEE TAG</title>
+    </head>
+    <body>
+        <center>
+            <h1>MARQUEE TAG</h1>
+            <p>used to news type messages breaking news </p>
+            <p>It has attributes called <br> 1) behavio[3]r<br>2)bgcolor<br>3)direction[4]<br>4)height </p>
+        </center>
+       
+        <marquee>THIS IS DEFAULT  MARQUEE TAG.. WITHOUT ANY attributes!</marquee>
+        <marquee><a href="#">THIS IS A ANCHOR MARQUEE TAG</a></marquee>
+        <marquee bgcolor="teal">THIS IS A MARQUEE TAG WITH BGCOLOR attributes</marquee>
+        <br><hr><br>
+
+        <marquee bgcolor="skyblue" behavior="alternate" >THIS IS ALTERNATIVE MARQUEE TAG AND IT MOVE FROM RITGHT TO LEST AND LEFT TO RITGHT</marquee>
+        <br><br>
+        <marquee bgcolor="red" behavior="scroll">THIS IS SCROLL MARQUEE TAG AND IT CONTINUE SCROLING FROM RIGHT TI LEFT</marquee>
+        <br><br>
+        <marquee bgcolor="yellow" behavior="slide">THIS IS SLIDE MARQUEE TAG AND IT SLIDES ONLY ONCE FROM RIGHT TO LEFT</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" behavior="alternate" direction="left">THIS IS ALTERNATIVE MARQUEE TAG WITH LEFT DIRECTION</marquee>
+        <br><br>
+        <marquee bgcolor="red" behavior="scroll" direction="right">THIS IS SCROLL MARQUEE WITH RUGHT  DIRECTION </marquee>
+        <br><br>
+        <marquee bgcolor="yellow" behavior="slide" direction="up" height="200">THIS IS SLIDE MARQUEE TAG with up DIRECTION</marquee>
+        <br><br>
+        <marquee bgcolor="yellow"  direction="down" height="100" >THIS IS SLIDE MARQUEE TAG with DOWN DIRECTION</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="1">THIS IS MARQUEE TAG...</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="5" id="test">THIS IS MARQUEE TAG...</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="25">THIS IS MARQUEE TAG...</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="10">THIS IS MARQUEE TAG...</marquee>
+        <br><br>
+        <!-- java script is case sensitive and also buit in dociuments are used  -->
+        <script>
+            let marqueeTag=document.getElementById("test");
+            marqueeTag.onmouseover=function(){
+                marqueeTag.stop();
+            }
+            marqueeTag.onmouseleave=function(){
+                marqueeTag.start();
+            }
+        </script>
+        
+    </body>
+</html>
